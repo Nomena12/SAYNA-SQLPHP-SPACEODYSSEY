@@ -16,6 +16,8 @@ include('app/Views/header.php');
                 <input type='hidden' name='planetes' value='<?= $planetes->id; ?>' />
                 <input type='text' name='name' value='<?= $planetes->name; ?>' />
                 <input type='text' name='distanceDepuisTerre' value='<?= $planetes->distanceDepuisTerre; ?>' />
+                <input type='text' name='circonference' value='<?= $planetes->circonference; ?>' />
+
 
                 <input type='submit' />
 

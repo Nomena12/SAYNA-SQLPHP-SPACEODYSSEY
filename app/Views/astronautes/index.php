@@ -8,11 +8,11 @@ include('app/Views/header.php');
 
 
         <div class="row">
-        <h1>Listes des planetes</h1>
+        <h1>Listes des astronautes</h1>
             </div>
 
             <div class="row">
-       <a class='leftLink' href=".?controller=Planetes&action=addPlanetes">ADD NEW PLANETES</a>
+       <a class='leftLink' href=".?controller=Astronautes&action=addAstronautes">ADD NEW ASTRONAUTES</a>
             </div>
 
             <div class="row">
@@ -21,33 +21,42 @@ include('app/Views/header.php');
                 <thead>
                     <tr>
                         <th>Nom</th>
-                        <th>Distance depuis la terre (km)</th>
-                        <th>Circonference (km)</th>
+                        <th>Prenom</th>
+                        <th>Age</th>
+                        <th>Sexe</th>
+                        <th>Sante</th>
+                        <th>Anne de service</th>
 
                     </tr>
 
                 </thead>
                     <tbody>
                         <?php
-                        foreach($planetes as $p){
+                        foreach($astronautes as $a){
                             
                             echo '<tr>';
-                            echo '<td>'. $p->name .'</td>';
+                            echo '<td>'. $a->name .'</td>';
                           
 
-                            echo '<td>'. $p->distanceDepuisTerre .'</td>';
+                            echo '<td>'. $a->firstName .'</td>';
                          
 
-                            echo '<td>'. $p->circonference .'</td>';
+                            echo '<td>'. $a->age .'</td>';
+
+                            echo '<td>'. $a->sexe_id .'</td>';
+
+                            echo '<td>'. $a->etatDeSante .'</td>';
+
+                            echo '<td>'. $a->nombreAnneeDeService .'</td>';
 
                             echo '<td>';
-                            echo kernel\Component::display('button',['url' => '.?controller=Planetes&action=edit&planetes='.$p->id,
+                            echo kernel\Component::display('button',['url' => '.?controller=Astronautes&action=edit&astronautes='.$a->id,
                             'label' => '<i class="fas fa-pen"></i>',
                             'type' =>'info', ]);
                             
                            
 
-                             echo kernel\Component::display('button',['url' => '.?controller=Planetes&action=delete&planetes='.$p->id,
+                             echo kernel\Component::display('button',['url' => '.?controller=Astronautes&action=delete&astronautes='.$a->id,
                             'label' => '<i class="fas fa-trash"></i>',
                             'type' =>'danger', ]);
 
