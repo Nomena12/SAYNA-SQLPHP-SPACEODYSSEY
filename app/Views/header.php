@@ -39,7 +39,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
     <div class="container">
       <a href="/" class="navbar-brand">
-        <img src="img/SAYNA_Logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+        <img src="img/logoS.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
         
       </a>
 
@@ -49,11 +49,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
       <div class="collapse navbar-collapse order-3" id="navbarCollapse">
         <!-- Left navbar links -->
-      <a href='.?controller=Vols&action=index' class='leftLink'>Vols</a>
+      <a href='.?controller=Vols&action=index' class='leftLink'>Suivi</a>
 
-      <a href='.?controller=Pays&action=index' class='leftLink'>Pays</a>
+      <a href='.?controller=Pays&action=index' class='leftLink'>Planetes</a>
 
-      <a href='.?controller=Aeroports&action=index' class='leftLink'>Aeroports</a>
+      <a href='.?controller=Aeroports&action=index' class='leftLink'>Atronautes</a>
+
+      <a href='.?controller=Aeroports&action=index' class='leftLink'>Missions</a>
+
 
       
 
