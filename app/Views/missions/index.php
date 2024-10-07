@@ -35,6 +35,7 @@ include('app/Views/header.php');
                 </thead>
                     <tbody>
                         <?php
+                        
                         foreach($missions as $m){
                             
                             echo '<tr>';
@@ -51,19 +52,6 @@ include('app/Views/header.php');
                             echo '<td>'. $m->statut .'</td>';
 
                             echo '<td>'. $m->planete_id .'</td>';
-                        /*   echo '<td>     <label for="compagnie">Compagnie :</label>
-    <select id="compagnie" name="compagnie_id">
-        <option value="">Sélectionnez une compagnie</option>';
-       
-
-         
-        foreach($planetes as $p){
-            echo '<option value="' . $p->id . '">' . htmlspecialchars($p->name) . '</option>';
-        }
-        
-        
-  echo '  </select>  </td>';
-  */
 
                             echo '<td>'. $m->astronaute_id .'</td>';
 

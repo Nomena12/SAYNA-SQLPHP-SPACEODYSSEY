@@ -17,12 +17,16 @@ class MissionsController extends \kernel\Controller{
 
     public function edit(){
         $missions = \app\Models\Missions::find($_GET['missions']);
-        return new \kernel\View('missions/form.php',['missions'=>$missions]);
+        $planetes = \app\Models\Planetes::all();
+        $astronautes = \app\Models\Astronautes::all();
+        $vaisseaux = \app\Models\Vaisseaux::all();
+        return new \kernel\View('missions/form.php',['missions'=>$missions,'planetes'=>$planetes,'astronautes'=>$astronautes,'vaisseaux'=>$vaisseaux]);
 
     }
 
     public function update(){
         $missions = \app\Models\Missions::find($_POST['missions']);
+        
         $missions->name=$_POST['name'];
         $missions->type=$_POST['type'];
         $missions->dateDeDebut=$_POST['dateDeDebut'];
@@ -31,7 +35,7 @@ class MissionsController extends \kernel\Controller{
         $missions->planete_id=$_POST['planete_id'];
         $missions->astronaute_id=$_POST['astronaute_id'];
         $missions->vaisseau_id=$_POST['vaisseau_id'];
-        
+        var_dump($missions->planete_id);
         $missions->save();
         header('Location:.?controller=Missions&action=index');
 

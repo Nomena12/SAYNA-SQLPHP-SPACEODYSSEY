@@ -49,7 +49,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
       <div class="collapse navbar-collapse order-3" id="navbarCollapse">
         <!-- Left navbar links -->
-      <a href='.?controller=Vols&action=index' class='leftLink'>Suivi</a>
+     
 
       <a href='.?controller=Planetes&action=index' class='leftLink'>Planetes</a>
 
