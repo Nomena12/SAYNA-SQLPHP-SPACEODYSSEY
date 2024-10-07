@@ -51,11 +51,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- Left navbar links -->
       <a href='.?controller=Vols&action=index' class='leftLink'>Suivi</a>
 
-      <a href='.?controller=Pays&action=index' class='leftLink'>Planetes</a>
+      <a href='.?controller=Planetes&action=index' class='leftLink'>Planetes</a>
 
       <a href='.?controller=Astronautes&action=index' class='leftLink'>Astronautes</a>
 
-      <a href='.?controller=Aeroports&action=index' class='leftLink'>Missions</a>
+      <a href='.?controller=Missions&action=index' class='leftLink'>Missions</a>
 
 
       
