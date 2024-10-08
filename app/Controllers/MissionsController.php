@@ -87,4 +87,9 @@ class MissionsController extends \kernel\Controller{
 
     }
 
+    public function api(){
+        return new \kernel\View('missions/dashboard.php');
+
+    }
+
 }
