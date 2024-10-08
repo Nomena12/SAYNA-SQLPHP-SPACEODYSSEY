@@ -3,6 +3,7 @@
 namespace app\Models;
 
 use Kernel\Model;
+session_start();
 
 class Missions extends Model{
     protected static string $table = 'missions';

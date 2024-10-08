@@ -80,8 +80,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <i class="fas fa-chevron-down"></i>
     </button>
     <div class="dropdown-content">
-        <a href="#">Mon profil</a>
-        <a href="#">Paramètres</a>
+        
         <a href=".?controller=Authentif&action=logout">Déconnexion</a>
     </div>
 </div>
